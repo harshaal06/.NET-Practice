@@ -1,0 +1,35 @@
+.NET Dev
+
+.NET is a development platform by Microsoft to build:
+Web APIs, Web apps, Desktop apps, Mobile apps, Cloud & microservices
+
+Think of .NET = Runtime + Libraries + Tools
+
+Frameworks inside .NET
+ASP.NET Core → Web APIs & Web Apps
+Entity Framework Core → Database ORM
+MAUI → Mobile/Desktop apps
+Blazor → C# frontend
+
+For backend developers: ASP.NET Core + EF Core = bread & butter
+
+📦 SDK contains:
+.NET Runtime
+Compilers
+CLI tools (Command Line Interface) -> Industry projects, CI/CD pipelines, Microservices
+Libraries
+
+
+Important CLI commands (must remember)
+dotnet new console -n MyApp
+dotnet run
+dotnet build
+dotnet restore
+MyApp
+ ├── Program.cs
+ ├── MyApp.csproj
+ └── bin/
+ └── obj/
+Program.cs → entry point
+.csproj → project config (like package.json)
+bin/obj → build output (ignore)
