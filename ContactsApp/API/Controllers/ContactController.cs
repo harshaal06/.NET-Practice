@@ -15,6 +15,7 @@ public class ContactController : ControllerBase
         _contactService = contactService;
     }
 
+    //API to post the contact in db
     [HttpPost]
     public async Task<IActionResult> AddContact([FromBody] Contact contact)
     {
@@ -27,6 +28,7 @@ public class ContactController : ControllerBase
         return Ok(new { message = "Contact added successfully" });
     }
 
+    // API to get the all contacts from db
     [HttpGet]
     public async Task<IActionResult> GetAllContacts()
     {
